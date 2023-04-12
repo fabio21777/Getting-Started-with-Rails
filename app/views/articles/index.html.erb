@@ -3,9 +3,7 @@
 <ul>
   <% @articles.each do |article| %>
     <li>
-     <strong>Titulo :</strong>   <%= article.title %>
-     <strong>body :</strong>      <%=  article.body  %>
-
+      <%= link_to article.title, article %>
     </li>
   <% end %>
 </ul>
